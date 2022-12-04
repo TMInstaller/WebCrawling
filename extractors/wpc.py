@@ -31,9 +31,9 @@ def get_page_count(keyword):
         return count
 
 
-def extract_timemapexe_keys(keyword):
+def extract_timemapexe_keys(keyword_b):
     url = "https://time-map-installer.tistory.com/search/"
-    response = get(f"{url}{keyword}")
+    response = get(f"{url}{keyword_b}")
     if response.status_code != 200:
         print("페이지를 불러올 수 없습니다", response.status_code)
     else:
@@ -57,9 +57,9 @@ def extract_timemapexe_keys(keyword):
         return results
 
 
-def extract_kurly_items(keyword):
+def extract_kurly_items(keyword_k):
     # 화면에 띄워져 있는 페이지의 최대 수를 검색하기 위한 코드
-    pages = get_page_count(keyword)
+    pages = get_page_count(keyword_k)
     print("Found", pages, "pages")
     # 페이지 수 만큼 반복시키며 데이터를 가져오는 코드 실행
     results = []
@@ -69,7 +69,7 @@ def extract_kurly_items(keyword):
         options.add_argument("--disable-dev-shm-usage")
         browser = webdriver.Chrome(options=options)
         url = 'https://www.kurly.com/search?sword='
-        final_url = f"{url}{keyword}&page={page}"
+        final_url = f"{url}{keyword_k}&page={page}"
         print("Requesting", final_url)
         browser.get(final_url)
         browser.implicitly_wait(time_to_wait=3)
