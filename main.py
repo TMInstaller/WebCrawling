@@ -13,11 +13,15 @@ def get_page_count(keyword):
     browser.get(f"https://www.kurly.com/search?sword={keyword}")
     browser.implicitly_wait(time_to_wait=3)
     pages = browser.find_element(By.XPATH, '//*[@id="container"]/div/div[2]/div[3]').text
+    # pages는 줄바꿈으로 이루어진 형태의 리스트이다
+    # 1\n2\n3\n4\n5\n6\n7\n8\n9\n10
     pages = pages.splitlines()
     count = []
+    # int형으로 모두 바꿔주고 최댓값 얻기
     for page in pages:
         count.append(int(page))
     count = max(count)
+    # 10페이지 이상 넘어갈 수는 없으니 최대 10까지만 return한다
     if count >= 10:
         return 10
     else:
