@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d1e3b6d8-aa16-49dc-be01-06558adf941e" name="Changes" comment="main.py&#10;마켓컬리 크롤링 리스트화, 줄바꿈 표식 제거완료">
+    <list default="true" id="d1e3b6d8-aa16-49dc-be01-06558adf941e" name="Changes" comment="main.py&#10;마켓컬리 검색 첫 페이지 크롤링&#10;완벽한 dict type으로 출력 완료">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
     </list>
@@ -22,17 +22,19 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RESET_MODE" value="MIXED" />
   </component>
   <component name="LineStatusTrackerManager">
     <file path="$PROJECT_DIR$/.idea/workspace.xml">
       <ranges>
         <range start1="2" end1="2" start2="2" end2="5" changelist="d5b3a6a0-7b6b-437a-b184-f5107b90e0ce" />
         <range start1="3" end1="4" start2="6" end2="7" changelist="d1e3b6d8-aa16-49dc-be01-06558adf941e" />
-        <range start1="29" end1="36" start2="32" end2="38" changelist="d1e3b6d8-aa16-49dc-be01-06558adf941e" />
-        <range start1="74" end1="75" start2="76" end2="77" changelist="d1e3b6d8-aa16-49dc-be01-06558adf941e" />
-        <range start1="125" end1="126" start2="127" end2="135" changelist="d1e3b6d8-aa16-49dc-be01-06558adf941e" />
-        <range start1="150" end1="151" start2="159" end2="161" changelist="d1e3b6d8-aa16-49dc-be01-06558adf941e" />
-        <range start1="153" end1="154" start2="163" end2="164" changelist="d1e3b6d8-aa16-49dc-be01-06558adf941e" />
+        <range start1="24" end1="24" start2="27" end2="28" changelist="d1e3b6d8-aa16-49dc-be01-06558adf941e" />
+        <range start1="30" end1="35" start2="34" end2="40" changelist="d1e3b6d8-aa16-49dc-be01-06558adf941e" />
+        <range start1="73" end1="74" start2="78" end2="79" changelist="d1e3b6d8-aa16-49dc-be01-06558adf941e" />
+        <range start1="131" end1="132" start2="136" end2="144" changelist="d1e3b6d8-aa16-49dc-be01-06558adf941e" />
+        <range start1="157" end1="158" start2="169" end2="171" changelist="d1e3b6d8-aa16-49dc-be01-06558adf941e" />
+        <range start1="160" end1="161" start2="173" end2="174" changelist="d1e3b6d8-aa16-49dc-be01-06558adf941e" />
       </ranges>
     </file>
   </component>
@@ -71,7 +73,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1670065802119</updated>
-      <workItem from="1670065803348" duration="27794000" />
+      <workItem from="1670065803348" duration="39006000" />
     </task>
     <task id="LOCAL-00001" summary="WebCrawling 프로젝트 시작">
       <created>1670065921849</created>
@@ -129,7 +131,14 @@
       <option name="project" value="LOCAL" />
       <updated>1670095130413</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="main.py&#10;마켓컬리 검색 첫 페이지 크롤링&#10;완벽한 dict type으로 출력 완료">
+      <created>1670100047398</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1670100047398</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -155,10 +164,11 @@
     <MESSAGE value="main.py&#10;블로그 검색 시 나오는 결과를 dict type으로&#10;저장한 후 일괄 출력&#10;찾아올 데이터에서 썸네일 이미지 정보 제외" />
     <MESSAGE value="main.py&#10;마켓컬리 크롤링 리스트화 완료&#10;&#10;wpc.py&#10;이전에 만들었던 블로그 크롤링 코드 함수화" />
     <MESSAGE value="main.py&#10;마켓컬리 크롤링 리스트화, 줄바꿈 표식 제거완료" />
-    <option name="LAST_COMMIT_MESSAGE" value="main.py&#10;마켓컬리 크롤링 리스트화, 줄바꿈 표식 제거완료" />
+    <MESSAGE value="main.py&#10;마켓컬리 검색 첫 페이지 크롤링&#10;완벽한 dict type으로 출력 완료" />
+    <option name="LAST_COMMIT_MESSAGE" value="main.py&#10;마켓컬리 검색 첫 페이지 크롤링&#10;완벽한 dict type으로 출력 완료" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/WebCrawling$main.coverage" NAME="main Coverage Results" MODIFIED="1670099628074" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/WebCrawling$main.coverage" NAME="main Coverage Results" MODIFIED="1670113777135" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/WebCrawling$wwr.coverage" NAME="wwr Coverage Results" MODIFIED="1670068448416" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/extractors" />
     <SUITE FILE_PATH="coverage/WebCrawling$crawl.coverage" NAME="crawl Coverage Results" MODIFIED="1670067456381" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
